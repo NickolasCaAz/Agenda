@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: cornflowerblue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+        form{
+            font-family: Arial;
+        }
+        form div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        form input, form textarea{
+            outline: unset;
+            padding: 20px;
+            width: 400px;
+            border: 3px solid cornflowerblue;
+            border-radius: 20px;
+        }
+
+        form input:focus, form textarea:focus{
+            background-color: lightblue;
+        }
+        form input[type=submit]{
+            margin-left: 10px;
+            background-color: cornflowerblue;
+            color: white;
+            cursor: pointer;
+            
+        }
+
+        form label{
+            margin-left: 15px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header> <h1>Formulário - Agenda</h1></header>
+    <section>
+        <form action="">
+            <div>
+                <label> Nome </label>
+                <input type="text" placeholder="Digite seu nome" name="nome" required/>
+            </div>
+            <div>
+                <label> Telefone </label>
+                <input type="text" placeholder="Digite seu telefone" name="telefone" required/>
+            </div>
+            <div>
+                <label> Email </label>
+                <input type="text" placeholder="Digite seu email" name="email" required/>
+            </div>
+            <div>
+                <label> Mensagem </label>
+                <textarea rows="10" name="msg" required></textarea>
+            </div>
+            <input type="submit" value="Enviar"/>
+        </form>
+    </section>
+</body>
+</html>
